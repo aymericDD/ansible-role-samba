@@ -1,4 +1,4 @@
-Role Name
+Ansible Role: Samba
 =========
 
 [![Build Status](https://travis-ci.com/aymericDD/ansible-role-samba.svg?branch=master)](https://travis-ci.com/aymericDD/ansible-role-samba)
