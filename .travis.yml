@@ -1,0 +1,12 @@
+---
+language: python
+services: docker
+
+install:
+  # Install test dependencies.
+  - pip install pipenv
+  - pipenv install
+
+script:
+  # Run tests.
+  - molecule test
