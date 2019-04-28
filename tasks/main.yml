@@ -1,0 +1,11 @@
+---
+- name: Ensure Samba-related packages are installed.
+  apt:
+    name: ['samba', 'samba-common']
+    state: present
+
+- name: Ensure Samba is running and set to start on boot.
+  service:
+    name: 'smbd'
+    state: started
+    enabled: yes

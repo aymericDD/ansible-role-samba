@@ -1,0 +1,36 @@
+Role Name
+=========
+
+Installs Samba client and server for Debian Stretch.
+
+Requirements
+------------
+
+Samba requires ports 137, 138, 139, 445 to be open to function properly.
+
+Role Variables
+--------------
+
+None.
+
+Dependencies
+------------
+
+None.
+
+Example Playbook
+----------------
+
+    - hosts: servers
+      roles:
+         - { role: ansible-role-smb }
+
+License
+-------
+
+BSD
+
+Author Information
+------------------
+
+This role was created in 2019 by [AymericDD](https://github.com/aymericDD).
