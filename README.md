@@ -25,7 +25,7 @@ Example Playbook
 
     - hosts: servers
       roles:
-         - { role: ansible-role-smb }
+         - { role: aymericdd.samba }
 
 License
 -------
