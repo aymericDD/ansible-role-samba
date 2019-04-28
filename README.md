@@ -1,6 +1,8 @@
 Role Name
 =========
 
+[![Build Status](https://travis-ci.com/aymericDD/ansible-role-samba.svg?branch=master)](https://travis-ci.com/aymericDD/ansible-role-samba)
+
 Installs Samba client and server for Debian Stretch.
 
 Requirements
