@@ -13,6 +13,6 @@ $ pipenv install
 ## Run molecule
 
 ``` bash
-$ pipenv run molecule install
+$ pipenv run molecule test
 ```   
 
