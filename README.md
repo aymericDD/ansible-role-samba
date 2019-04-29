@@ -64,4 +64,6 @@ BSD
 Author Information
 ------------------
 
+This role is based on samba role written by Jeff Geerling, author of Ansible for DevOps.
+
 This role was created in 2019 by [AymericDD](https://github.com/aymericDD).
