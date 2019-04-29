@@ -4,6 +4,16 @@
     name: ['samba', 'samba-common']
     state: present
 
+- name: Configure Samba server.
+  template:
+    src: smb.conf.j2
+    dest: /etc/samba/smb.conf
+    owner: root
+    group: root
+    mode: 0644
+  notify:
+    restart smb
+
 - name: Ensure Samba is running and set to start on boot.
   service:
     name: 'smbd'

@@ -1,0 +1,8 @@
+---
+samba_global_workgroup: WORKGROUP
+samba_home_browseable: no
+samba_home_read_only: yes
+samba_home_create_mask: 0700
+samba_home_directory_mask: 0700
+samba_home_valid_users: '%S'
+samba_shares: []
