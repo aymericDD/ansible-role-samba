@@ -2,6 +2,9 @@ Ansible Role: Samba
 =========
 
 [![Build Status](https://travis-ci.com/aymericDD/ansible-role-samba.svg?branch=master)](https://travis-ci.com/aymericDD/ansible-role-samba)
+[![test-suite](https://img.shields.io/badge/ansible--roles--specs-ansible--role--samba-blue.svg?style=flat)](https://github.com/aymericDD/ansible-role-samba/tree/master/molecule/default)
+[![Ansible
+Galaxy](https://img.shields.io/badge/galaxy-aymericdd.samba-660198.svg?style=flat)](https://galaxy.ansible.com/aymericdd/samba)
 
 Installs Samba client and server for Debian Stretch.
 
