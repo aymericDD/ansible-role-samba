@@ -1,0 +1,40 @@
+---
+name: CI
+'on':
+  pull_request:
+  push:
+    branches:
+      - master
+  schedule:
+    - cron: "0 3 * * 4"
+
+defaults:
+  run:
+    working-directory: 'aymericdd.samba'
+
+jobs:
+  molecule:
+    name: Molecule
+    runs-on: buster
+
+    steps:
+      - name: Check out the codebase.
+        uses: actions/checkout@v2
+        with:
+          path: 'aymericdd.samba'
+
+      - name: Install pyenv.
+        uses: "gabrielfalcao/pyenv-action@v5"
+
+      - name: Install dependecies.
+        uses: VaultVulp/action-pipenv@v2.0.1
+        with:
+          command: sync
+
+      - name: Run Molecule tests.
+        uses: VaultVulp/action-pipenv@v2.0.1
+        with:
+          command: run molecule test
+        env:
+          PY_COLORS: '1'
+          ANSIBLE_FORCE_COLOR: '1'
