@@ -6,7 +6,7 @@ Ansible Role: Samba
 [![Ansible
 Galaxy](https://img.shields.io/badge/galaxy-aymericdd.samba-660198.svg?style=flat)](https://galaxy.ansible.com/aymericdd/samba)
 
-Installs Samba client and server for Debian Stretch.
+Installs Samba client and server for Debian Stretch/Buster.
 
 Requirements
 ------------
