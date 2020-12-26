@@ -9,8 +9,10 @@ lint: |
   ansible-lint .
   flake8
 platforms:
-  - name: instance
+  - name: instance-stretch
     image: debian:9
+  - name: instance-buster
+    image: debian:10
 provisioner:
   name: ansible
 verifier:
